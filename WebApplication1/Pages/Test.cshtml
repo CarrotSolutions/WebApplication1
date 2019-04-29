@@ -1,0 +1,17 @@
+﻿@page
+@model WebApplication1.Pages.TestModel
+@{
+    ViewData["Title"] = "Test";
+}
+
+<h1>Test</h1><br />
+
+<a asp-page="./Index">Home</a><br />
+
+<div id="Counter">
+    @(await Html.RenderComponentAsync<Counter>())
+
+
+    <script src="~/_framework/blazor.server.js"></script>
+
+</div>
